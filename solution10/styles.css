@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #36384D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.wrapper{
+    background-color: #FFFFFF;
+    border-radius: 36px;
+    padding: 24px;
+    display: flex;
+    filter: drop-shadow(0px 15px 60px rgba(0, 0, 0, 0.25));
+}
+
+
+.wrapperLeft{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 64px;
+    margin-left: 40px;
+}
+
+.infoText{
+    display: inline-block;
+}
+
+.Heading, .subHeading{
+    margin-bottom: 24px;
+}
+
+.Heading{
+    color: #242742;
+    font-size: 56px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    line-height:100%;
+}
+
+.subHeading{
+    color: #242742;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 150%;
+    max-width: 376px;
+}
+
+.infoText{
+    color: #242742;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+label{
+    color: #242742;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 12px;
+}
+
+input{
+    font-family: "Roboto Flex", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 150%;
+    font-size: 16px;
+    padding: 16px 24px;
+    max-width: 376px;
+    width: 100%;
+    border-radius: 8px;
+}
+
+button{
+    background-color: #242742;
+    color: #FFFFFF;
+    padding: 16px 72px;
+    max-width: 376px;
+    width: 100%;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 170%;
+    font-size: 15px;
+    letter-spacing: 0px;
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
+}
+
+button:hover{
+    background: rgb(255,106,58);
+    background: linear-gradient(180deg, rgba(255,106,58,1) 0%, rgba(255,82,123,1) 100%);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.errorMessage{
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 150%;
+    font-size: 12px;
+    color: #FF6155;
+}
+
+.input-error{
+    color: #FF6155;
+    background-color:rgba(255, 97, 85, 0.15);
+    border: 2px solid #FF6155 !important;
+}
+
+.formRow{
+    margin-bottom: 8px;
+}
+
+#contact-form-email {
+    cursor: pointer;
+}
+
+#contact-form-email.clicked {
+    cursor: text;
+}
+
+.hidden {
+    display: none;
+}
+
+.active{
+    display: block;
+}
+
+.mainSucces {
+    background-color: #FFFFFF;
+    border-radius: 36px;
+    padding: 48px 64px;
+    max-width: 504px;
+    display: none;
+}
+
+.mainSucces.active {
+    display: block;
+}
+
+.imgMainMobile{
+    display: none;
+}
+
+@media (max-width: 929.98px) {
+    .wrapper{
+        flex-direction: column-reverse;
+    }
+    .imgMainMobile{
+        display: block;
+        margin-bottom: 40px;
+        border-radius: 16px;
+    }
+    .imgMain{
+        display: none;
+    }
+    .wrapperRight{
+        max-width: 375px;
+    }
+    .wrapper{
+        max-width: 423px;
+    }
+    .wrapperLeft{
+        margin: 0;
+    }
+}
+
+.infoText{
+    margin-bottom: 10px;
+}
+
+.infoText1{
+    margin-bottom: 40px;
+}
+
+@media (max-width:499.98px) {
+    .mainSuccesHeading{
+        font-size: 40px;
+    }
+}
+
+@media (max-width:423.98px) {
+    .imgMainMobile{
+        border-radius: 0px;
+        max-width: 100%;
+        width: 100%;
+    }
+    body{
+        display: block;
+    }
+    .wrapper{
+        padding: 0;
+        max-width: 100%;
+        width: 100%;
+    }
+    .wrapperRight{
+        max-width: 100%;
+        width: 100%;
+    }
+    .Heading{
+        font-size: 40px;
+    }
+    .wrapperLeft{
+        padding: 0 24px 24px 24px;
+    }
+    button{
+        padding: 14px 8px;
+    }
+    .wrapper{
+        border-radius: 0px;
+    }
+    .info{
+        display:flex;
+        margin-bottom: 10px;
+    }
+    .infoText{
+        margin: 0;
+    }
+    .mainSucces{
+        padding: 48px 24px;
+        border-radius: 0px;
+    }
+}
